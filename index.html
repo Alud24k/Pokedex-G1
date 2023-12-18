@@ -20,9 +20,419 @@
     <title>Document</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-danger navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Pokedex</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categoria
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Fuego</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Agua</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/categoriaPlanta.html"
+                      >Hierba</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="/pages/acercadenosotros.html"
+                  >Acerca de Nosotros</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="buscar un pokemon"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="container my-4">
+        <div id="pokemonCarousel" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#pokemonCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#pokemonCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#pokemonCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/1339105.png" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="./img/426407.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="./img/641968.jpg" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#pokemonCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#pokemonCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <section class="container">
+        <h1 class="text-center display-1 mb-4">POKÉDEX</h1>
+        <section class="row">
+          <article class="col-md-4 col-lg-3 mb-3">
+            <div class="card h-100">
+              <img
+                src="../img/productos/001.png"
+                class="card-img-top"
+                alt="Bulbasaur"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bulbasaur</h5>
+                <p class="card-text">
+                  Este Pokémon nace con una semilla en el lomo, que brota con el
+                  paso del tiempo.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="./pages/bulbasaur.html">
+                  <button
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalpokemon"
+                  >
+                    Ver mas
+                  </button></a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="col-md-4 col-lg-3 mb-3">
+            <div class="card h-100">
+              <img
+                src="../img/productos/002.png"
+                class="card-img-top"
+                alt="Ivysaur"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ivysaur</h5>
+                <p class="card-text">
+                  Cuando le crece bastante el bulbo del lomo, pierde la
+                  capacidad de erguirse sobre las patas traseras.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="./pages/Ivysaur.html">
+                  <button class="btn btn-primary">Ver mas</button></a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="col-md-4 col-lg-3 mb-3">
+            <div class="card h-100">
+              <img
+                src="../img/productos/003.png"
+                class="card-img-top"
+                alt="Venusaur"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Venusaur</h5>
+                <p class="card-text">
+                  La planta florece cuando absorbe energía solar, lo cual le
+                  obliga a buscar siempre la luz del sol.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="./pages/venasaur.html"
+                  ><button class="btn btn-primary">Ver mas</button></a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="col-md-4 col-lg-3 mb-3">
+            <div class="card h-100">
+              <img
+                src="../img/productos/004.png"
+                class="card-img-top"
+                alt="Charmeleon"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Charmander</h5>
+                <p class="card-text">
+                  Prefiere las cosas calientes. Dicen que cuando llueve le sale
+                  vapor de la punta de la cola.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="./pages/charmander.html"
+                  ><button class="btn btn-primary">Ver mas</button></a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="col-md-4 col-lg-3 mb-3">
+            <div class="card h-100">
+              <img
+                src="../img/productos/005.png"
+                class="card-img-top"
+                alt="Charmeleon"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Charmeleon</h5>
+                <p class="card-text">
+                  Este Pokémon de naturaleza agresiva ataca en combate con su
+                  cola llameante y hace trizas al rival con sus afiladas garras.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="./pages/charmeleon.html"
+                  ><button class="btn btn-primary">Ver mas</button></a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="col-md-4 col-lg-3 mb-3">
+            <div class="card h-100">
+              <img
+                src="../img/productos/006.png"
+                class="card-img-top"
+                alt="Charizard"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Charizard</h5>
+                <p class="card-text">
+                  Se dice que el fuego de Charizard arde con más fuerza cuantas
+                  más duras batallas haya vivido.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="./pages/charizard.html">
+                  <button class="btn btn-primary">Ver mas</button></a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="col-md-4 col-lg-3 mb-3">
+            <div class="card h-100">
+              <img
+                src="../img/productos/007.png"
+                class="card-img-top"
+                alt="Squirtle"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Squirtle</h5>
+                <p class="card-text">
+                  Cuando retrae su largo cuello en el caparazón, dispara agua a
+                  una presión increíble.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="./pages/squirtle.html"
+                  ><button class="btn btn-primary">Ver mas</button></a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="col-md-4 col-lg-3 mb-3">
+            <div class="card h-100">
+              <img
+                src="../img/productos/008.png"
+                class="card-img-top"
+                alt="Wartortle"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Wartortle</h5>
+                <p class="card-text">
+                  Se lo considera un símbolo de longevidad. Los ejemplares más
+                  ancianos tienen musgo sobre el caparazón.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="./pages/wartortle.html"
+                  ><button class="btn btn-primary">Ver mas</button></a
+                >
+              </div>
+            </div>
+          </article>
+          <article class="col-md-4 col-lg-3 mb-3">
+            <div class="card h-100">
+              <img
+                src="../img/productos/009.png"
+                class="card-img-top"
+                alt="Blastoise"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Blastoise</h5>
+                <p class="card-text">
+                  Para acabar con su enemigo, lo aplasta con el peso de su
+                  cuerpo. En momentos de apuro, se esconde en el caparazón.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="./pages/blastoise.html"
+                  ><button class="btn btn-primary">Ver mas</button></a
+                >
+              </div>
+            </div>
+          </article>
+        </section>
+      </section>
+      <nav aria-label="Navegacion de grilla de productos">
+        <ul class="pagination justify-content-center">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </main>
+    <section
+      class="modal fade"
+      id="modalMedialuna"
+      tabindex="-1"
+      aria-labelledby="modalMedialunaLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5" id="modalMedialunaLabel">Croissant</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="../img/productos/Croissant_00018_portfolio1.jpg"
+              alt="Medialuna"
+              class="w-100"
+            />
+            <p class="mt-3">
+              <b>Precio:</b>
+              <span class="badge rounded-pill text-bg-warning">$200</span> la
+              unidad
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              totam nulla id sint cumque quod dicta atque quos dolorum eos animi
+              tempore iste, a rerum minima magni, consequuntur earum culpa fugit
+              molestiae laboriosam ratione. Nihil blanditiis assumenda ducimus
+              reiciendis molestiae eius molestias necessitatibus dicta iusto,
+              nostrum tenetur aperiam deleniti quod vitae debitis rerum animi.
+              Tempore mollitia et perspiciatis dolores odio animi ea enim libero
+              a labore quidem, voluptatum soluta consectetur culpa, nostrum
+              tenetur quae alias illo numquam doloribus magni facere. Corrupti
+              aspernatur veniam nemo magni, iure officia nobis repudiandae unde
+              sunt exercitationem, nostrum est ullam quae impedit expedita
+              laboriosam molestias, quasi hic dolore! Quaerat sequi repellendus
+              reprehenderit dolorem. Maiores magnam temporibus qui perspiciatis
+              dignissimos mollitia in ea nulla enim fuga eius minus, minima ad
+              numquam aut, illum, eveniet cumque? Aperiam, culpa officiis
+              veritatis, accusamus, natus laudantium praesentium exercitationem
+              eligendi veniam possimus voluptatem impedit! Harum distinctio vel
+              dignissimos obcaecati molestias quod?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    >>>>>>> 7cc16ca5ae97d6ab6017b0d5a651c10e049488f6
+    <footer>
+      <div class="bg-black py-3">
+        <p class="text-center text-white">
+          &copy;todos los derechos reservados
+        </p>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
